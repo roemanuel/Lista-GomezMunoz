@@ -1,0 +1,8 @@
+<div [ngStyle]="{backgroundColor: 'lightblue'}">
+  <h1>{{titulo | uppercase}} </h1>
+  <ul>
+    <li *ngFor="let alumno of alumnos">
+      <p>Nombre: {{alumno.nombre}}<br>Fecha de inscripción: {{alumno.fechaInscripcion | date: "shortDate"}}<br>Dinero abonado: {{alumno.dineroAbonado | currency: "ARS"}}<br></p>
+    </li>
+  </ul>
+</div>
